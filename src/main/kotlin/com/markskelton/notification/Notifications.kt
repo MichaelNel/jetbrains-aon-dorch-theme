@@ -27,11 +27,11 @@ object Notifications {
     Notifications::class.java
   )
 
-  private val notificationGroup = NotificationGroupManager.getInstance().getNotificationGroup("One Dark Theme")
+  private val notificationGroup = NotificationGroupManager.getInstance().getNotificationGroup("Aon Dorch Theme")
 
   fun displayUpdateNotification(versionNumber: String) {
     val pluginName =
-      getPlugin(PluginId.getId(PLUGIN_ID))?.name ?: "One Dark Theme"
+      getPlugin(PluginId.getId(PLUGIN_ID))?.name ?: "Aon Dorch Theme"
 
     notificationGroup.createNotification(
       UPDATE_MESSAGE,
